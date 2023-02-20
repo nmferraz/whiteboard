@@ -2,6 +2,8 @@ import ReactFlow, { Background, Controls } from "reactflow";
 import { zinc } from "tailwindcss/colors";
 import "reactflow/dist/style.css";
 
+// Nodes, Edges are gonna be personalized
+
 function App() {
   return (
     <div className="w-screen h-screen">
