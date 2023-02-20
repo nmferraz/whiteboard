@@ -1,8 +1,13 @@
-import ReactFlow from "reactflow";
+import ReactFlow, { Background, Controls } from "reactflow";
 import "reactflow/dist/style.css";
 
 function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <ReactFlow>
+      <Background />
+      <Controls />
+    </ReactFlow>
+  );
 }
 
 export default App;
