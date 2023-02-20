@@ -12,7 +12,7 @@ import "reactflow/dist/style.css";
 import { Square } from "./components/nodes/Square";
 import { useCallback } from "react";
 import DefaultEdge from "./components/edges/DefaultEdge";
-
+import * as Toolbar from "@radix-ui/react-toolbar";
 // Nodes, Edges are gonna be personalized
 
 const NODE_TYPES = {
@@ -71,6 +71,10 @@ function App() {
         <Background gap={12} size={2} color={zinc[200]} />
         <Controls />
       </ReactFlow>
+
+      <Toolbar.Root className="fixed bottom-20 left-1/2 -translate-x-1/2 bg-white rounded-2xl shadow-lg border border-zinc-300 px-8 h-20 w-96 overflow-hidden">
+        <Toolbar.Button onClick={} className="w-32 h-32 mt-6 bg-violet-500 rounded transition-transform hover:-translate-y-2" />
+      </Toolbar.Root>
     </div>
   );
 }
