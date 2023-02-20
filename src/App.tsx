@@ -1,4 +1,4 @@
-import ReactFlow, { Background, Controls } from "reactflow";
+import ReactFlow, { Background, ConnectionMode, Controls } from "reactflow";
 import { zinc } from "tailwindcss/colors";
 import "reactflow/dist/style.css";
 import { Square } from "./components/nodes/Square";
@@ -34,7 +34,7 @@ const INITIAL_NODES = [
 function App() {
   return (
     <div className="w-screen h-screen">
-      <ReactFlow nodeTypes={NODE_TYPES} nodes={INITIAL_NODES}>
+      <ReactFlow nodeTypes={NODE_TYPES} nodes={INITIAL_NODES} connectionMode={ConnectionMode.Loose}>
         <Background gap={12} size={2} color={zinc[200]} />
         <Controls />
       </ReactFlow>
